@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "Home_Screen.h"
+@interface ViewController : UIViewController<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIFloatLabelTextField *username_tf;
+- (IBAction)login_click:(id)sender;
+@property (weak, nonatomic) IBOutlet UIFloatLabelTextField *password_tf;
 
 @end
 
