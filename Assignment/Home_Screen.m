@@ -14,7 +14,8 @@
 
 @implementation Home_Screen
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     cellSelectionBar = [[UIView alloc] init];
@@ -22,10 +23,11 @@
     
     [_tabsView registerNib:[UINib nibWithNibName:@"PageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PagecollectionviewCell"];
     
-    tabsArray =@[@"INBOX",@"SENT",@"DRAFT",@"TRASH",@"IMPORTANT"];
+    tabsArray =@[@"CRITICAL",@"WARNING",@"FEED"];
     [self createTabsView];
     [self updatePage];
 }
+
 #pragma mark paging
 -(void)createTabsView
 {
@@ -70,7 +72,7 @@
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     [_profileTableBgView addSubview:self.pageController.view];
-    [self.pageController.view setFrame:CGRectMake(0,0,_profileTableBgView.bounds.size.width, _profileTableBgView.bounds.size.height)];
+    [self.pageController.view setFrame:CGRectMake(10,10,_profileTableBgView.bounds.size.width-20, _profileTableBgView.bounds.size.height-20)];
     
     [self.pageController didMoveToParentViewController:self];
 }
@@ -81,7 +83,7 @@
    // childViewController.msg_delegate=self;
     childViewController.contentArray =@[@"",@""];
     childViewController.index = index;
-    childViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.pageController.view.frame.size.height);
+    childViewController.view.frame = CGRectMake(10, 10, self.view.frame.size.width-20, self.pageController.view.frame.size.height-20);
     
     return childViewController;
 }
@@ -155,7 +157,7 @@
         cellSelectionBar.backgroundColor = [UIColor colorWithRed:172/255.0f green:0/255.0f blue:21/255.0f alpha:1.0];
         cellSelectionBar.tag = 500;
         [cell.contentView addSubview:cellSelectionBar];
-        cell.categoryTitle.textColor = [UIColor whiteColor];
+        cell.categoryTitle.textColor = [UIColor blackColor];
     }
     else
     {
@@ -167,7 +169,7 @@
             }
         }
        // cell.categoryTitle.textColor = [UIColor colorWithRed:208/255.0f green:198/255.0f blue:198/255.0f alpha:1.0];
-        cell.categoryTitle.textColor = [UIColor blackColor];
+        cell.categoryTitle.textColor = [UIColor grayColor];
 
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e6V-Ia-rgQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e6V-Ia-rgQ">
     <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,8 +31,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mp9-dc-Awq">
                                         <rect key="frame" x="0.0" y="103.99999999999999" width="336.66666666666674" height="51.666666666666643"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgt-sa-dXc" customClass="UIFloatLabelTextField">
-                                                <rect key="frame" x="1" y="1" width="334.66666666666674" height="49.666666666666657"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgt-sa-dXc" customClass="UIFloatLabelTextField">
+                                                <rect key="frame" x="10" y="1" width="316.66666666666674" height="49.666666666666657"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -45,15 +45,15 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="zgt-sa-dXc" secondAttribute="bottom" constant="1" id="8EU-Kw-Jd0"/>
                                             <constraint firstItem="zgt-sa-dXc" firstAttribute="top" secondItem="Mp9-dc-Awq" secondAttribute="top" constant="1" id="P8f-m7-oka"/>
-                                            <constraint firstItem="zgt-sa-dXc" firstAttribute="leading" secondItem="Mp9-dc-Awq" secondAttribute="leading" constant="1" id="u8T-mW-GX0"/>
-                                            <constraint firstAttribute="trailing" secondItem="zgt-sa-dXc" secondAttribute="trailing" constant="1" id="uTv-SQ-jZX"/>
+                                            <constraint firstItem="zgt-sa-dXc" firstAttribute="leading" secondItem="Mp9-dc-Awq" secondAttribute="leading" constant="10" id="u8T-mW-GX0"/>
+                                            <constraint firstAttribute="trailing" secondItem="zgt-sa-dXc" secondAttribute="trailing" constant="10" id="uTv-SQ-jZX"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glE-Ps-Tl2">
                                         <rect key="frame" x="0.0" y="51.333333333333343" width="336.66666666666674" height="51.666666666666657"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-Pw-Z7n" customClass="UIFloatLabelTextField">
-                                                <rect key="frame" x="1" y="1" width="334.66666666666674" height="49.666666666666657"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-Pw-Z7n" customClass="UIFloatLabelTextField">
+                                                <rect key="frame" x="10" y="1" width="316.66666666666674" height="49.666666666666657"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -64,10 +64,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="q4Q-Pw-Z7n" secondAttribute="trailing" constant="1" id="KYM-9t-XXP"/>
+                                            <constraint firstAttribute="trailing" secondItem="q4Q-Pw-Z7n" secondAttribute="trailing" constant="10" id="KYM-9t-XXP"/>
                                             <constraint firstItem="q4Q-Pw-Z7n" firstAttribute="top" secondItem="glE-Ps-Tl2" secondAttribute="top" constant="1" id="ZbJ-bF-VTm"/>
                                             <constraint firstAttribute="bottom" secondItem="q4Q-Pw-Z7n" secondAttribute="bottom" constant="1" id="ifw-WH-81Q"/>
-                                            <constraint firstItem="q4Q-Pw-Z7n" firstAttribute="leading" secondItem="glE-Ps-Tl2" secondAttribute="leading" constant="1" id="mLt-2h-U3n"/>
+                                            <constraint firstItem="q4Q-Pw-Z7n" firstAttribute="leading" secondItem="glE-Ps-Tl2" secondAttribute="leading" constant="10" id="mLt-2h-U3n"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPc-j4-waz">
